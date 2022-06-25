@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract module which provides a basic access control mechanism, where there is an account (an owner) that can be granted exclusive access to specific functions. By default, the owner account will be the one that deploys the contract. This can later be changed with {transferOwnership}. This module is used through inheritance. It will make available the modifier `onlyOwner`, which can be applied to your functions to restrict their use to the owner.",
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"stateVariables": {
+				"__gap": {
+					"details": "This empty reserved space is put in place to allow future versions to add new variables without shifting down storage in the inheritance chain. See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ERC721/OwnableUpgradeable.sol": "OwnableUpgradeable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC721/OwnableUpgradeable.sol": {
+			"keccak256": "0x97f14efcb2c88af757a53e39cc1697910534f7fe3bef5e5642cd4b551270a840",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://52a0af318ce7135fa0de21f2f7e9035b7a70bd29eabf205aba1a10f3f47af9da",
+				"dweb:/ipfs/QmbeVLwHGVksnwbaeaxqo85sMTs7E41V1aL3i9g1RYkxVE"
+			]
+		},
+		"Utils/AddressUpgradeable.sol": {
+			"keccak256": "0xf6d4ff5c2f658bbb9a7815c2722ca7d1774c8c311a091ec4a5099128524b2eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e9aa658e338934e90048272ff6e3202de3606b44eca15b9a6333ffb65765377c",
+				"dweb:/ipfs/QmcNHruHbKW28HfRcsTm4J9ygbkmdJHqE1PwCXAPfkdR6X"
+			]
+		},
+		"Utils/ContextUpgradeable.sol": {
+			"keccak256": "0x92fac0e53317ff400da2c57fbeacf65664915a39803bb8df868dc2da4ca900c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2728259e929816bf46743774c4e60d51d214daf908c7e78329ca61725ac498b3",
+				"dweb:/ipfs/QmTpP8U3hYorjnhA8KCoGbQ1Dn79xghNg7MhGZk7PvhsyV"
+			]
+		},
+		"Utils/Initializable.sol": {
+			"keccak256": "0xfb4297abcb591bc098918f75a0254cebda8180b783cecf03b8c96aa5977d8338",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0fb72c19cb638da79b23ade1731290adcbb985af1ac89f36d235903f0cc44068",
+				"dweb:/ipfs/QmXngXCNkkRdb4CefhF8nd3Hf1NxaA7uCmhMUJSXKXdRAa"
+			]
+		}
+	},
+	"version": 1
+}

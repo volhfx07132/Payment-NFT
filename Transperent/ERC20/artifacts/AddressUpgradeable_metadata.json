@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ERC20/AddressUpgradeable.sol": "AddressUpgradeable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC20/AddressUpgradeable.sol": {
+			"keccak256": "0xf6d4ff5c2f658bbb9a7815c2722ca7d1774c8c311a091ec4a5099128524b2eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e9aa658e338934e90048272ff6e3202de3606b44eca15b9a6333ffb65765377c",
+				"dweb:/ipfs/QmcNHruHbKW28HfRcsTm4J9ygbkmdJHqE1PwCXAPfkdR6X"
+			]
+		}
+	},
+	"version": 1
+}

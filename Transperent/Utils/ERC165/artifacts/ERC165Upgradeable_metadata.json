@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Implementation of the {IERC165} interface. Contracts that want to implement ERC165 should inherit from this contract and override {supportsInterface} to check for the additional interface id that will be supported. For example: ```solidity function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {     return interfaceId == type(MyInterface).interfaceId || super.supportsInterface(interfaceId); } ``` Alternatively, {ERC165Storage} provides an easier to use but more expensive implementation.",
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}."
+				}
+			},
+			"stateVariables": {
+				"__gap": {
+					"details": "This empty reserved space is put in place to allow future versions to add new variables without shifting down storage in the inheritance chain. See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Utils/ERC165/ERC165Upgradeable.sol": "ERC165Upgradeable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Utils/AddressUpgradeable.sol": {
+			"keccak256": "0xf6d4ff5c2f658bbb9a7815c2722ca7d1774c8c311a091ec4a5099128524b2eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e9aa658e338934e90048272ff6e3202de3606b44eca15b9a6333ffb65765377c",
+				"dweb:/ipfs/QmcNHruHbKW28HfRcsTm4J9ygbkmdJHqE1PwCXAPfkdR6X"
+			]
+		},
+		"Utils/ERC165/ERC165Upgradeable.sol": {
+			"keccak256": "0xe92f2d276876bfcbf17a83cfd2e92ffe6715f74ece1335a1d421b11c35b0af96",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d603f1b0076c2ff43e4b54af411a96481f5bd70641e00ca34edcc7ba103321fa",
+				"dweb:/ipfs/QmWtLwjhJPbPaunAVLnTU8tTzptNDJxnf5te1d1mEs57Ef"
+			]
+		},
+		"Utils/ERC165/IERC165Upgradeable.sol": {
+			"keccak256": "0xa3a86fd8399ff01763901b64ed4603d979787747d7b83f70d6d3c7d4f6b79214",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46c8a582b7c414ed987dfc73de91899493cd62be3a4087b09194cfdc1bbd6bf8",
+				"dweb:/ipfs/QmTpZgF3997huy7avP5EyowdwoSUj9FbHESH16wAtAvpkw"
+			]
+		},
+		"Utils/Initializable.sol": {
+			"keccak256": "0xfb4297abcb591bc098918f75a0254cebda8180b783cecf03b8c96aa5977d8338",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0fb72c19cb638da79b23ade1731290adcbb985af1ac89f36d235903f0cc44068",
+				"dweb:/ipfs/QmXngXCNkkRdb4CefhF8nd3Hf1NxaA7uCmhMUJSXKXdRAa"
+			]
+		}
+	},
+	"version": 1
+}

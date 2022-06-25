@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract module which allows children to implement an emergency stop mechanism that can be triggered by an authorized account. This module is used through inheritance. It will make available the modifiers `whenNotPaused` and `whenPaused`, which can be applied to the functions of your contract. Note that they will not be pausable by simply including this module, only once the modifiers are put in place.",
+			"events": {
+				"Paused(address)": {
+					"details": "Emitted when the pause is triggered by `account`."
+				},
+				"Unpaused(address)": {
+					"details": "Emitted when the pause is lifted by `account`."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"paused()": {
+					"details": "Returns true if the contract is paused, and false otherwise."
+				}
+			},
+			"stateVariables": {
+				"__gap": {
+					"details": "This empty reserved space is put in place to allow future versions to add new variables without shifting down storage in the inheritance chain. See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ERC721/PausableUpgradeable.sol": "PausableUpgradeable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC721/PausableUpgradeable.sol": {
+			"keccak256": "0x939da4e8b5c6007959027984ba16db1e366e0287d6d0f2e731bae8c6fa6d47c1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://900e8fe8574b8062757c04cf8bbfdc76653af26da5e0cd13f90d3f329fd95dbf",
+				"dweb:/ipfs/QmfLUdqAacKKocLZpbWNnfY4KHqGsnmqNshutRMKGy9YnC"
+			]
+		},
+		"Utils/AddressUpgradeable.sol": {
+			"keccak256": "0xf6d4ff5c2f658bbb9a7815c2722ca7d1774c8c311a091ec4a5099128524b2eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e9aa658e338934e90048272ff6e3202de3606b44eca15b9a6333ffb65765377c",
+				"dweb:/ipfs/QmcNHruHbKW28HfRcsTm4J9ygbkmdJHqE1PwCXAPfkdR6X"
+			]
+		},
+		"Utils/ContextUpgradeable.sol": {
+			"keccak256": "0x92fac0e53317ff400da2c57fbeacf65664915a39803bb8df868dc2da4ca900c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2728259e929816bf46743774c4e60d51d214daf908c7e78329ca61725ac498b3",
+				"dweb:/ipfs/QmTpP8U3hYorjnhA8KCoGbQ1Dn79xghNg7MhGZk7PvhsyV"
+			]
+		},
+		"Utils/Initializable.sol": {
+			"keccak256": "0xfb4297abcb591bc098918f75a0254cebda8180b783cecf03b8c96aa5977d8338",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0fb72c19cb638da79b23ade1731290adcbb985af1ac89f36d235903f0cc44068",
+				"dweb:/ipfs/QmXngXCNkkRdb4CefhF8nd3Hf1NxaA7uCmhMUJSXKXdRAa"
+			]
+		}
+	},
+	"version": 1
+}

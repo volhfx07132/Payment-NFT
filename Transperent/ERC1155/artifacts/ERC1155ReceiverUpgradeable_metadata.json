@@ -1,0 +1,232 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "values",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155BatchReceived",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "_Available since v3.1._",
+			"kind": "dev",
+			"methods": {
+				"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)": {
+					"details": "Handles the receipt of a multiple ERC1155 token types. This function is called at the end of a `safeBatchTransferFrom` after the balances have been updated. NOTE: To accept the transfer(s), this must return `bytes4(keccak256(\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\"))` (i.e. 0xbc197c81, or its own function selector).",
+					"params": {
+						"data": "Additional data with no specified format",
+						"from": "The address which previously owned the token",
+						"ids": "An array containing ids of each token being transferred (order and length must match values array)",
+						"operator": "The address which initiated the batch transfer (i.e. msg.sender)",
+						"values": "An array containing amounts of each token being transferred (order and length must match ids array)"
+					},
+					"returns": {
+						"_0": "`bytes4(keccak256(\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\"))` if transfer is allowed"
+					}
+				},
+				"onERC1155Received(address,address,uint256,uint256,bytes)": {
+					"details": "Handles the receipt of a single ERC1155 token type. This function is called at the end of a `safeTransferFrom` after the balance has been updated. NOTE: To accept the transfer, this must return `bytes4(keccak256(\"onERC1155Received(address,address,uint256,uint256,bytes)\"))` (i.e. 0xf23a6e61, or its own function selector).",
+					"params": {
+						"data": "Additional data with no specified format",
+						"from": "The address which previously owned the token",
+						"id": "The ID of the token being transferred",
+						"operator": "The address which initiated the transfer (i.e. msg.sender)",
+						"value": "The amount of tokens being transferred"
+					},
+					"returns": {
+						"_0": "`bytes4(keccak256(\"onERC1155Received(address,address,uint256,uint256,bytes)\"))` if transfer is allowed"
+					}
+				},
+				"supportsInterface(bytes4)": {
+					"details": "See {IERC165-supportsInterface}."
+				}
+			},
+			"stateVariables": {
+				"__gap": {
+					"details": "This empty reserved space is put in place to allow future versions to add new variables without shifting down storage in the inheritance chain. See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ERC1155/ERC1155ReceiverUpgradeable.sol": "ERC1155ReceiverUpgradeable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC1155/ERC1155ReceiverUpgradeable.sol": {
+			"keccak256": "0x19c94c950dfa2490735fc7e2b2dbb1c61053a8421f358e51cd89d768b5a4d95c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f50879fe3743c58c4695e771a1f882e17badd751ca6622b2ea1af9e6fa80c828",
+				"dweb:/ipfs/QmX5HNgoh7Nhkj7BN4sSoECa9hwepv3jHtDAF1BANQS2H6"
+			]
+		},
+		"ERC1155/IERC1155ReceiverUpgradeable.sol": {
+			"keccak256": "0xc3c3f9bd7807ee34a3f5842f2e475988fb773aa0d95c9d8afa22edb8e94589a9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5d5c6cfbb8ceff0613a303a93477673e42167cc115e76699ae54107d0d0c7dc0",
+				"dweb:/ipfs/QmTiY3tn4cn2N6uGsuJ6JwfV9F7WFsLEKn5rmnt96mNnfd"
+			]
+		},
+		"Utils/AddressUpgradeable.sol": {
+			"keccak256": "0xf6d4ff5c2f658bbb9a7815c2722ca7d1774c8c311a091ec4a5099128524b2eaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e9aa658e338934e90048272ff6e3202de3606b44eca15b9a6333ffb65765377c",
+				"dweb:/ipfs/QmcNHruHbKW28HfRcsTm4J9ygbkmdJHqE1PwCXAPfkdR6X"
+			]
+		},
+		"Utils/ERC165/ERC165Upgradeable.sol": {
+			"keccak256": "0xe92f2d276876bfcbf17a83cfd2e92ffe6715f74ece1335a1d421b11c35b0af96",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d603f1b0076c2ff43e4b54af411a96481f5bd70641e00ca34edcc7ba103321fa",
+				"dweb:/ipfs/QmWtLwjhJPbPaunAVLnTU8tTzptNDJxnf5te1d1mEs57Ef"
+			]
+		},
+		"Utils/ERC165/IERC165Upgradeable.sol": {
+			"keccak256": "0xa3a86fd8399ff01763901b64ed4603d979787747d7b83f70d6d3c7d4f6b79214",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://46c8a582b7c414ed987dfc73de91899493cd62be3a4087b09194cfdc1bbd6bf8",
+				"dweb:/ipfs/QmTpZgF3997huy7avP5EyowdwoSUj9FbHESH16wAtAvpkw"
+			]
+		},
+		"Utils/Initializable.sol": {
+			"keccak256": "0xfb4297abcb591bc098918f75a0254cebda8180b783cecf03b8c96aa5977d8338",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0fb72c19cb638da79b23ade1731290adcbb985af1ac89f36d235903f0cc44068",
+				"dweb:/ipfs/QmXngXCNkkRdb4CefhF8nd3Hf1NxaA7uCmhMUJSXKXdRAa"
+			]
+		}
+	},
+	"version": 1
+}

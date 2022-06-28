@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ethereum/Presale.sol": "Presale01"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC20/IERC20.sol": {
+			"keccak256": "0xdd286f7283325eb12ee50e41dac6be9665262e827b66f4f8952111ff77b6a130",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://567e5cfe5c64fb8c5f041393d42178447cf00880a2a2172a5a8e83131e1c24fa",
+				"dweb:/ipfs/QmY6KVSBk5xbtZuyhcQPNyJAATMZnmJ45TcBBAE7rzD5du"
+			]
+		},
+		"Ethereum/Presale.sol": {
+			"keccak256": "0x1763d307015fc6041464f2106e4a759ef6a8cf7b761a522ede7e7d2a60e941cb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d86b290fe709649a9b2bd3f06c7c9045f870c42bd4ef39e2c2835abfef185a2b",
+				"dweb:/ipfs/QmTPWRUD9MKJB2WiS64dtzP1pLK7xCH3zhJfvyzWvgLdKx"
+			]
+		}
+	},
+	"version": 1
+}

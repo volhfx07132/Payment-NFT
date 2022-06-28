@@ -1,0 +1,291 @@
+{
+	"compiler": {
+		"version": "0.8.5+commit.a4f2e591"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getBaseReceiveFeeAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getClaimFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFeeAnyone",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFeeCreatePresale",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRefundFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTokenReceiveFeeAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "settingFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "refundFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "claimFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feeCreatePresale",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feeAnyone",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "baseReceiveFeeAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "tokenReceiveFeeAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_refundFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_claimFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_feeCreatePresale",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_feeAnyone",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_baseReceiveFeeAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_tokenReceiveFeeAddress",
+						"type": "address"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ethereum/PresaleSettings.sol": "PresaleSettings"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ethereum/PresaleSettings.sol": {
+			"keccak256": "0xd528e69fe609777406cbc171798411fceca331f54727ed0b32e16b7fda4f3336",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1c53f21ecfb120beafdc0896cac819d26c1504f3b949584191269390eaa3f882",
+				"dweb:/ipfs/QmeFkevG6qYhgDHQrVMDiQ18b8vhr4YV2bKofDrPHXKvbq"
+			]
+		},
+		"Utils/Context.sol": {
+			"keccak256": "0x81d5fc973a522c8909d60be6a201869d46aa47b030b8813f60616404628c2b94",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9755b505799e622d964a843a8ed1fd60fedffca230178e5cb95ae9280df4dcd2",
+				"dweb:/ipfs/QmRkhUYUUgRZ2QYJjmtQct2ubyYwS3bdUMhbuFYM12VfYn"
+			]
+		},
+		"Utils/EnumerableSet.sol": {
+			"keccak256": "0x8adfeb5c886c6a727bdeac6db8e78f418e09f16f7c941c7111125b59ec2fd838",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://632e2346228015ce98183a0f0658057a9f2ae8b8d25b639eb9303e8e0ea34957",
+				"dweb:/ipfs/QmPY3nbe3JhMsgyHJTtXRkLTioW997Bvizt23mPNKKGSgu"
+			]
+		},
+		"Utils/Ownable.sol": {
+			"keccak256": "0x5eeb86897007c578f301464fceac720c7330486c54ae85c0c09068b46197cfb9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://edefd9ff4f087a3016763a687eaae449c0e8f6dcda9d86032a49de900f129050",
+				"dweb:/ipfs/Qmc4adiPdGKgEJLxqgd8JuKkwrNBNtB78kkGinnnuUnyJN"
+			]
+		}
+	},
+	"version": 1
+}

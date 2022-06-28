@@ -1,0 +1,100 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "backToken",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "backToken1",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "real_amount_in",
+						"type": "uint256"
+					}
+				],
+				"name": "sendData",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/1_Storage.sol": "Storage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/1_Storage.sol": {
+			"keccak256": "0x1d538af02661a60f983f2e2d1abd458d1ccb2bc341ecaa8e2e23a0d7ba8c1e64",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1294c443bb80ad38644671827b667b16b03f77c07ae6cb286e23455c16735f6b",
+				"dweb:/ipfs/QmdscjmJwb1XCwLVPgsPFg7pt3Q9yEC37nYTFrcVaeaXaq"
+			]
+		},
+		"contracts/TransferHelper.sol": {
+			"keccak256": "0xf64de8bda44d6e6a0ef231b637d0d6c78522fd561464c547eeca34f1a8e0482c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d36e8e7a9c1c50e24298b33bbde7e9d74998b58c889b706c80f95d130952d9e7",
+				"dweb:/ipfs/QmP5sAxCH4LFZFJ9uxtFdCdZ3DPJJfv1iU6cHY19urExxw"
+			]
+		}
+	},
+	"version": 1
+}

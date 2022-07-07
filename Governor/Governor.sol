@@ -30,6 +30,7 @@ abstract contract Governor is Context, ERC165, EIP712, IGovernor, IERC721Receive
     using DoubleEndedQueue for DoubleEndedQueue.Bytes32Deque;
     using SafeCast for uint256;
     using Timers for Timers.BlockNumber;
+    uint256[] public arrayProposalId;
 
     bytes32 public constant BALLOT_TYPEHASH = keccak256("Ballot(uint256 proposalId,uint8 support)");
     bytes32 public constant EXTENDED_BALLOT_TYPEHASH =
@@ -239,6 +240,10 @@ abstract contract Governor is Context, ERC165, EIP712, IGovernor, IERC721Receive
         return "";
     }
 
+    function getData(string memory description) public view returns(bytes32) {
+        return keccak256(bytes(description));
+    }
+
     /**
      * @dev See {IGovernor-propose}.
      */
@@ -252,8 +257,10 @@ abstract contract Governor is Context, ERC165, EIP712, IGovernor, IERC721Receive
             getVotes(_msgSender(), block.number - 1) >= proposalThreshold(),
             "Governor: proposer votes below proposal threshold"
         );
-
+        //0x7d84a6263ae0d98d3329bd7b46bb4e8d6f98cd35a7adb45c274c8b7fd5ebd5e0
+        //17310493490542493958126465241743504984306507217200089309000920285835719132089
         uint256 proposalId = hashProposal(targets, values, calldatas, keccak256(bytes(description)));
+        arrayProposalId.push(proposalId);
 
         require(targets.length == values.length, "Governor: invalid proposal length");
         require(targets.length == calldatas.length, "Governor: invalid proposal length");

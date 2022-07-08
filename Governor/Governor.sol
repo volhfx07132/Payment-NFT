@@ -257,24 +257,17 @@ abstract contract Governor is Context, ERC165, EIP712, IGovernor, IERC721Receive
             getVotes(_msgSender(), block.number - 1) >= proposalThreshold(),
             "Governor: proposer votes below proposal threshold"
         );
-        //0x7d84a6263ae0d98d3329bd7b46bb4e8d6f98cd35a7adb45c274c8b7fd5ebd5e0
-        //17310493490542493958126465241743504984306507217200089309000920285835719132089
         uint256 proposalId = hashProposal(targets, values, calldatas, keccak256(bytes(description)));
         arrayProposalId.push(proposalId);
-
         require(targets.length == values.length, "Governor: invalid proposal length");
         require(targets.length == calldatas.length, "Governor: invalid proposal length");
         require(targets.length > 0, "Governor: empty proposal");
-
         ProposalCore storage proposal = _proposals[proposalId];
         require(proposal.voteStart.isUnset(), "Governor: proposal already exists");
-
         uint64 snapshot = block.number.toUint64() + votingDelay().toUint64();
         uint64 deadline = snapshot + votingPeriod().toUint64();
-
         proposal.voteStart.setDeadline(snapshot);
         proposal.voteEnd.setDeadline(deadline);
-
         emit ProposalCreated(
             proposalId,
             _msgSender(),

@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Empty",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "OutOfBounds",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"details": "A sequence of items with the ability to efficiently push and pop items (i.e. insert and remove) on both ends of the sequence (called front and back). Among other access patterns, it can be used to implement efficient LIFO and FIFO queues. Storage use is optimized, and all operations are O(1) constant time. This includes {clear}, given that the existing queue contents are left in storage. The struct is called `Bytes32Deque`. Other types can be cast to and from `bytes32`. This data structure can only be used in storage, and not in memory. ``` DoubleEndedQueue.Bytes32Deque queue; ``` _Available since v4.6._",
+			"errors": {
+				"Empty()": [
+					{
+						"details": "An operation (e.g. {front}) couldn't be completed due to the queue being empty."
+					}
+				],
+				"OutOfBounds()": [
+					{
+						"details": "An operation (e.g. {at}) couldn't be completed due to an index being out of bounds."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"GovernorClassic/DoubleEndedQueue.sol": "DoubleEndedQueue"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GovernorClassic/DoubleEndedQueue.sol": {
+			"keccak256": "0x9f2e13d39c26d7d8dd392df3d5d18757a3e35eb94fa790af1711e317add4e8a5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a2dd0bb6bd1c1893b3e60136befecda6ca1f507f1b22c113df8f217d1677a122",
+				"dweb:/ipfs/QmcEmuLXyvh2YajdqQCEinjhyB4dLy9rurF6RArXESX88P"
+			]
+		},
+		"GovernorClassic/SafeCast.sol": {
+			"keccak256": "0x84872215a840657977a0406d6cca57c57bf4ca3c87367d77aba38ba2cf42de2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc204cb65f56d641aad982417e9243af05d449f531e5a8f3139304e54383df05",
+				"dweb:/ipfs/QmZMgAZ4YpYXqhcptZkeo1e66DrnBMfxkzrg12YjmwkMFr"
+			]
+		}
+	},
+	"version": 1
+}

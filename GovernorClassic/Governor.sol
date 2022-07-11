@@ -522,6 +522,17 @@ abstract contract Governor is Context, ERC165, EIP712, IGovernor, IERC721Receive
         ProposalCore storage proposal = _proposals[proposalId];
         require(state(proposalId) == ProposalState.Active, "Governor: vote not currently active");
 
+
+        /*
+        function _getVotes(
+        address account,
+        uint256 blockNumber,
+        bytes memory 
+            ) internal view virtual override returns (uint256) {
+                return token.getPastVotes(account, blockNumber);
+            }
+        */
+
         uint256 weight = _getVotes(account, proposal.voteStart.getDeadline(), params);
         _countVote(proposalId, account, support, weight, params);
 

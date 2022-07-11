@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.15+commit.e14f2714"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -1044,11 +1044,11 @@
 			]
 		},
 		"GovernorClassic/Governor.sol": {
-			"keccak256": "0x951be38e20c4578e534685501278fb3fc4aa23020e29b004ff8d83c1af7b9c98",
+			"keccak256": "0xc5606afc1de5a1a51e644bf45021c171b2e6df89aac51bbfc7a9ce94a14b0d89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4f8fc84550d6804c41f2618b183048ce047e383c13821b1e0eb2a0a3ea2da81e",
-				"dweb:/ipfs/QmZuKZjo2zVc378XbFWm6EtGXaTStff6S9cMESMsyVDhvh"
+				"bzz-raw://595bcc50726982e675ab51932b9829fb7c91beb269cc4a0d57676b465b24da4a",
+				"dweb:/ipfs/Qmf3ic5ufoXNB2DCGivLM3BfWJPVCKohQr17M8Xv7goVMF"
 			]
 		},
 		"GovernorClassic/IERC1155Receiver.sol": {

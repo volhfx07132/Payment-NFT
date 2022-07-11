@@ -57,11 +57,11 @@
 	},
 	"sources": {
 		"GovernorClassic/DoubleEndedQueue.sol": {
-			"keccak256": "0x9f2e13d39c26d7d8dd392df3d5d18757a3e35eb94fa790af1711e317add4e8a5",
+			"keccak256": "0x41d0e4653c4647a79e810d3d4391e4d91ddf30109bc43fe64be8fd0612e8fe61",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a2dd0bb6bd1c1893b3e60136befecda6ca1f507f1b22c113df8f217d1677a122",
-				"dweb:/ipfs/QmcEmuLXyvh2YajdqQCEinjhyB4dLy9rurF6RArXESX88P"
+				"bzz-raw://09fa149dd3e38dac30746501061c07ef4976b8f4a7f516759cfc727a8b187397",
+				"dweb:/ipfs/QmRQbqCBaK5ePeBcYaZeE7o3q9WgnxkC28gYRADpZXLPdc"
 			]
 		},
 		"GovernorClassic/SafeCast.sol": {

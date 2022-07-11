@@ -18,7 +18,7 @@ import "./SafeCast.sol";
  *
  * _Available since v4.6._
  */
-contract DoubleEndedQueue {
+library DoubleEndedQueue {
     /**
      * @dev An operation (e.g. {front}) couldn't be completed due to the queue being empty.
      */

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.15+commit.e14f2714"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -1240,11 +1240,11 @@
 			]
 		},
 		"GovernorClassic/Governor.sol": {
-			"keccak256": "0x951be38e20c4578e534685501278fb3fc4aa23020e29b004ff8d83c1af7b9c98",
+			"keccak256": "0xc5606afc1de5a1a51e644bf45021c171b2e6df89aac51bbfc7a9ce94a14b0d89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4f8fc84550d6804c41f2618b183048ce047e383c13821b1e0eb2a0a3ea2da81e",
-				"dweb:/ipfs/QmZuKZjo2zVc378XbFWm6EtGXaTStff6S9cMESMsyVDhvh"
+				"bzz-raw://595bcc50726982e675ab51932b9829fb7c91beb269cc4a0d57676b465b24da4a",
+				"dweb:/ipfs/Qmf3ic5ufoXNB2DCGivLM3BfWJPVCKohQr17M8Xv7goVMF"
 			]
 		},
 		"GovernorClassic/GovernorCountingSimple.sol": {
@@ -1320,11 +1320,11 @@
 			]
 		},
 		"GovernorClassic/MyGovernor.sol": {
-			"keccak256": "0x11b52549d155a2d4668a813d0a2e3f394cc0bb12bbe3df3ae601c2914ab090d7",
+			"keccak256": "0x279c9e14fbdc3f44e410de194d0d6f8e53668100d2bf2d423f318aa4bdac68cd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://484360d64bde749b437fe05ae16119e2a563c3e7a68c519aeeb4de3a1f3b98d3",
-				"dweb:/ipfs/QmcfnimizEmPs7yE7WCD9iTEyWodaZuRxnTokB4x8TXHrA"
+				"bzz-raw://ca923fa01ff4805c019b1e2e7579e693136b2a2de6b50e7b2ace620305237f8c",
+				"dweb:/ipfs/QmVGCJyXChp8vdMMte1jbA8JHbt3Ljets8beLJ97TECGXG"
 			]
 		},
 		"GovernorClassic/SafeCast.sol": {

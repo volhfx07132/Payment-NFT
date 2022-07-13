@@ -1,0 +1,87 @@
+0	_rewardRate	uint256	100
+1	_minStake	uint256	100000000000000000000
+2	_maxStake	uint256		
+3	_tokenAddress	address	0x1FE2c8FF6B32BecaF5c71A258CC6E4A05941DCC2
+4	newOwner	address	0xa5924b1D57400c3dc027aAd8855fE8867DF5D97e
+
+---------------------------------------------
+0x6Ccb41eedA5a073076F3E7dC1614C185b5fA41eD
+0x4f0B12bBF40Fc182559822A5b1dB6D34dbC3E016
+0x39Ba3ca2AE86A881a1De9cC4B81d0fD59CA189BD
+0xe4c1eC323AA9AB600bA062614D254AC678afa484
+0x5eDEE6Aef903179b79c5EcF462fD4A728908418e
+0xa14AcEA9588822C137BaC3978ae22f021926C71F
+0xd5817737DBA0c1503dc38c1e130F5CF46b2cF6B7
+----------------------------------------------
+
+OneQusestion: check ==> settingFarm ==> require(totalSupply() == 0, "Already staked in old token");
+
+genesic ==> 0x8ea972b200A1d04beEDAb09E95D3038B08DB815F
+Farm  ==> 0x1F5C41dA59Ca90f0D46245EC6f6E744b8655C35a
+Token ==> 0x3ca7A2a41A265463Bf4342F12cc7F75E42871050
+
+
+0x4ba43f82 ==> addForStake
+0x3d33019b ==> newFarm
+onlyChildFarm ==> check exit adress user in farms(mapping)  
+0x3606b522 ==> addShopMode
+
+
+struct Card {
+        bool trueForERC1155;
+        uint256 requiredPoints;
+        uint256 royalities;
+        uint256 startTime;
+        uint256 endTime;
+        uint256 supply;
+        address artist;
+        bool isStakingTokenLock;
+        bool trueForShopMode;
+        uint256 pricePerPiece;
+        address shop;
+}
+
+struct FrontendCard {
+        address _NftContractAddress;
+        uint256 _id;
+        bool _trueForERC1155;
+        uint256 _requiredPoints;
+        uint256 _royalities;
+        uint256 _startTime;
+        uint256 _endTime; // Maybe = 0
+        uint256 _supply;
+}
+
+
+
+addForStake 
+
+0	f._NftContractAddress	address	0x8afA903aec707a41b0643c75166FB454E28BbAD4
+0	f._id	uint256	141
+0	f._trueForERC1155	bool	true
+0	f._requiredPoints	uint256	1500000000000000
+0	f._royalities	uint256	10
+0	f._startTime	uint256	1651769220
+0	f._endTime	uint256	1654015620
+0	f._supply	uint256	500
+2	_artist	address	0xa5924b1D57400c3dc027aAd8855fE8867DF5D97e
+2	_desfarms	address	0x8A7b404f324050250f89f1F34ae488C44b426d70
+4	isTokenLockSetting	bool	true
+4	minLockAmount	uint256	100000000000000000000
+
+====> For ERC1155
+["0x7CD2c27792840F862a58500706c6b68D01FdB312", 1, true, "1500000000000000", 10, 1657693220, 1657893220, 1000]
+0x6Ccb41eedA5a073076F3E7dC1614C185b5fA41eD
+["0x0eeAB394C0f0AD3B839fc97E7f924A2980fd088A"]
+true
+["100000000000000000000"]
+
+====> For ERC721
+["0xc35a3d56D98E0Bf70d9e399c1c0d8B04928aCC8B", 1, false, "1500000000000000", 10, 1657632423, 1657732423, 1]
+
+===> addShopMode
+
+
+
+0xDd35c4C220Ba188Bf7CF43CB614331451cc8706c
+0x76FA54d236D2D6E9c7c12c801214C88a34d7dD2D

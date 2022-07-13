@@ -14,7 +14,7 @@ import "./SafeERC20.sol";
 import "./Wrap.sol";
 
 
-contract DaoLaunchFarm is Wrap, Ownable, CloneFactory {
+contract YeildFarming is Wrap, Ownable, CloneFactory {
     //using SafeMath for uint256;
 
     // NFT properties when add NFT to Farm
@@ -155,9 +155,7 @@ contract DaoLaunchFarm is Wrap, Ownable, CloneFactory {
         DaoLaunchFarm(clone).init(_rewardRate, _minStake, _maxStake, _tokenAddress);
         DaoLaunchFarm(clone).setCloned();
         DaoLaunchFarm(clone).transferOwnership(newOwner);
-
         farms[newOwner].push(clone);
-
         emit FarmCreated(newOwner, clone);
     }
 

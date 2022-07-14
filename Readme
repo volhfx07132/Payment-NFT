@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------Farm_V2--------------------------------------------------
+struct Deposits {
+        uint256 amount;
+        uint256 initialStake;
+        uint256 latestClaim;
+        uint256 userAccShare;
+        uint256 currentPeriod;
+    }
+
+    struct periodDetails {
+        uint256 period;
+        uint256 accShare;
+        uint256 rewPerBlock;
+        uint256 startingBlock;
+        uint256 endingBlock;
+    }
+-----------------------------------------------
+address public tokenAddress;
+    address public rewardTokenAddress;
+    uint256 public stakedTotal;
+    uint256 public stakedBalance;
+    uint256 public rewardBalance;
+    uint256 public totalReward;
+    uint256 public startingBlock;
+    uint256 public endingBlock;
+    uint256 public period;
+    uint256 public accShare;
+    uint256 public lastRewardBlock;
+    bool public isPaused;
+
+    IERC20 public ERC20Interface;
+
+-------------------------------------------------------------------------------------
+    mapping(address => Deposits) private deposits;
+    mapping(address => bool) public isPaid;
+    mapping(address => bool) public hasStaked;
+    mapping(uint256 => periodDetails) private endAccShare;
+-------------------------------------------------------------------------------------
+    address public tokenAddress;
+    address public rewardTokenAddress;
+    uint256 public stakedTotal;
+    uint256 public stakedBalance;
+    uint256 public rewardBalance;
+    uint256 public totalReward;
+    uint256 public startingBlock;
+    uint256 public endingBlock;
+    uint256 public period;
+    uint256 public accShare;
+    uint256 public lastRewardBlock;
+    bool public isPaused;
+-------------------------------------------------------------------------------------
+StakeToken: 0x0d8Fa2E260E2F95EA63C3183BbcAc9584719Ba4F
+RewardToken: 0x302ebc76c898aD8FC6328aB3a97ff91E77A1533D
+YieldFarming: 0x4ae71b84aAC778d2D2DBbfB618DCF9efA468b62c
+-------------------------------------------------------------------------------------
+0x6Ccb41eedA5a073076F3E7dC1614C185b5fA41eD
+0x4f0B12bBF40Fc182559822A5b1dB6D34dbC3E016
+0x39Ba3ca2AE86A881a1De9cC4B81d0fD59CA189BD
+0xe4c1eC323AA9AB600bA062614D254AC678afa484
+0x5eDEE6Aef903179b79c5EcF462fD4A728908418e
+0xa14AcEA9588822C137BaC3978ae22f021926C71F
+0xd5817737DBA0c1503dc38c1e130F5CF46b2cF6B7
+----------------------------------------------

@@ -101,7 +101,7 @@ contract Farm is Ownable {
             return false;
         }
         // ==> payMe(address payer, uint256 amount, address token)
-        // ==> _payTo(payer, address(this), amount, token) ==> safeTransferFrom(payer, address(this), amount)
+        // ==> _payTo(payer, address(this), amount, token) ==> safeTransferFrom(payer, address(this), )
 
         totalReward = totalReward.add(_rewardAmount);
         rewardBalance = rewardBalance.add(_rewardAmount);
@@ -157,17 +157,13 @@ contract Farm is Ownable {
             lastRewardBlock = block.number;
             return;
         }
-
         uint256 noOfBlocks;
-
         if (block.number >= endingBlock) {
             noOfBlocks = endingBlock.sub(lastRewardBlock);
         } else {
             noOfBlocks = block.number.sub(lastRewardBlock);
         }
-
         uint256 rewards = noOfBlocks.mul(rewPerBlock());
-
         accShare = accShare.add((rewards.mul(1e6).div(stakedBalance)));
         if (block.number >= endingBlock) {
             lastRewardBlock = endingBlock;
@@ -349,9 +345,9 @@ contract Farm is Ownable {
 
         uint256 accShare1 = endAccShare[userPeriod].accShare;
         uint256 userAccShare = deposits[from].userAccShare;
-
-        if (deposits[from].latestClaim >= endAccShare[userPeriod].endingBlock)
+        if (deposits[from].latestClaim >= endAccShare[userPeriod].endingBlock) {
             return 0;
+        }
         uint256 amount = deposits[from].amount;
         uint256 rewDebt = amount.mul(userAccShare).div(1e6);
         uint256 rew = (amount.mul(accShare1).div(1e6)).sub(rewDebt);
